@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 900px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+form {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input {
+    width: 80%;
+    height: 2rem;
+    font-size: 1.3rem;
+}
+
+form button {
+    min-width: 150px;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.dropzones {
+    display: flex;
+    justify-content: space-between;
+}
+.dropzone {
+    border: 1px dashed black;
+    width: 100px;
+    height: 100px;
+}
+.palavra {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.letras {
+    border: 1px solid black;
+    font-size: 22px;;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.highlight {
+    background-color: rgb(255, 254, 197);
+}
+.is-dragging {
+    cursor: move;
+    opacity: 0.3;
+}
+.over {
+    background-color: rgb(130, 255, 130);
+}
