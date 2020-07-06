@@ -42,34 +42,44 @@ form button {
 
 .dropzones {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .dropzone {
     border: 1px dashed black;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    margin-bottom: 20px;
 }
+
 .palavra {
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .letras {
     border: 1px solid black;
     font-size: 22px;;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .highlight {
     background-color: rgb(255, 254, 197);
 }
+
 .is-dragging {
     cursor: move;
     opacity: 0.3;
 }
+
 .over {
     background-color: rgb(130, 255, 130);
 }
