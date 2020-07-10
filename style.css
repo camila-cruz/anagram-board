@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Fira Sans', sans-serif;
+}
+
 main {
     width: 100%;
     max-width: 900px;
@@ -12,15 +19,17 @@ main {
 }
 
 h1 {
+    font-family: 'Galada', cursive;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
+    color: #505050;
 }
 
 .descricao {
     font-size: 1.5rem;
     text-align: center;
-    
+    color: #3b3b3b;
 }
 
 form {
@@ -30,16 +39,31 @@ form {
 }
 
 form input {
+    font-family: 'Fira Sans', sans-serif;
     width: 80%;
     height: 2rem;
     font-size: 1.3rem;
 }
 
+form input:focus {
+    border: 1px solid black;
+    outline: none;
+}
+
 form button {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: blanchedalmond;
+    border: 1px solid #979797;
     width: 150px;
     min-width: 80px;
     height: 2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(255, 219, 164);
+    border: 1px solid black;
 }
 
 .dropzones {
@@ -65,20 +89,27 @@ form button {
 
 .letras {
     border: 1px solid black;
-    font-size: 22px;;
+    font-size: 1.6rem;
+
+    background: linear-gradient(to right, #ceb975, #e7dda2);
+    font-family: 'Roboto Slab', serif;
+    color: black;
+
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: grab;
 }
 
 .highlight {
-    background-color: rgb(255, 254, 197);
+    background-color: rgb(168, 167, 241);
 }
 
 .is-dragging {
-    cursor: move;
+    cursor: grabbing !important;
     opacity: 0.3;
 }
 
