@@ -9,11 +9,15 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main {
     width: 100%;
     max-width: 900px;
+    min-height: 500px;
     margin: auto;
     padding: 30px 10px 0px;
 }
@@ -115,4 +119,29 @@ form button:hover {
 
 .over {
     background-color: rgb(130, 255, 130);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    margin-bottom: 8px;
+    color: #505050;
+}
+
+footer p a {
+    color: inherit;
+}
+
+footer p a:visited {
+    color: inherit;
+}
+
+footer p a:hover {
+    font-weight: bold;
 }
